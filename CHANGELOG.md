@@ -1,5 +1,5 @@
 ### 2022/02/25
 
--  App created
+-   App created
 
 ---

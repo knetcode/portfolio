@@ -7,15 +7,15 @@ import appReducer from "./reducers/appReducer"
 const middleware = [thunk]
 
 const rootReducer = combineReducers({
-    app: appReducer,
+	app: appReducer,
 })
 
 const composeEnhancers =
-    // @ts-ignore
-    typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-        ? // @ts-ignore
-          window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
-        : compose
+	// @ts-ignore
+	typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+		? // @ts-ignore
+		  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
+		: compose
 const enhancer = composeEnhancers(applyMiddleware(...middleware))
 
 const makeStore = () => createStore(rootReducer, enhancer)

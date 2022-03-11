@@ -1,17 +1,35 @@
 {
-	"name": "next-starter",
+	"name": "portfolio",
 	"version": "0.0.1",
 	"config": {
 		"port": "3000"
+	},
+	"author": {
+		"name": "Kyle Esterhuizen",
+		"email": "kyle@knetcode.com",
+		"url": "https://knetcode.com"
 	},
 	"private": true,
 	"scripts": {
 		"dev": "next dev --port $npm_package_config_port",
 		"build": "next build",
 		"start": "next start --port $npm_package_config_port",
-		"lint": "next lint"
+		"lint": "next lint",
+		"clean": "rm -rf node_modules yarn.lock",
+		"format": "prettier --write \"**/*.{html,css,js,jsx,ts,tsx,md,json}\""
 	},
 	"dependencies": {
+		"@mantine/core": "^4.0.0",
+		"@mantine/dates": "^4.0.0",
+		"@mantine/dropzone": "^4.0.0",
+		"@mantine/hooks": "^4.0.0",
+		"@mantine/modals": "^4.0.0",
+		"@mantine/next": "^4.0.0",
+		"@mantine/notifications": "^4.0.0",
+		"@mantine/prism": "^4.0.0",
+		"@mantine/rte": "^4.0.0",
+		"@mantine/spotlight": "^4.0.0",
+		"dayjs": "^1.10.8",
 		"nanoid": "^3.3.1",
 		"next": "^12.1.0",
 		"next-redux-wrapper": "^7.0.5",
@@ -20,6 +38,7 @@
 		"react-redux": "^7.2.6",
 		"redux": "^4.1.2",
 		"redux-thunk": "^2.4.1",
+		"sharp": "^0.30.2",
 		"styled-jsx": "^5.0.0"
 	},
 	"devDependencies": {
@@ -40,6 +59,7 @@
 		"eslint-plugin-jest-dom": "^4.0.1",
 		"eslint-plugin-testing-library": "^5.0.5",
 		"next-transpile-modules": "^9.0.0",
+		"prettier": "^2.5.1",
 		"typescript": "^4.5.5"
 	}
 }

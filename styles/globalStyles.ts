@@ -38,8 +38,11 @@ export const GlobalStyles = css.global`
 	}
 
 	body {
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		background-color: ${Colors.white};
+		font-family: "Nunito Sans", sans-serif;
+	}
+
+	.mono {
+		font-family: "Fira Mono", monospace;
 	}
 
 	h1,
@@ -49,7 +52,6 @@ export const GlobalStyles = css.global`
 	h5,
 	h6 {
 		font-weight: bold;
-		color: ${Colors.text.dark};
 	}
 
 	p,
@@ -59,8 +61,7 @@ export const GlobalStyles = css.global`
 	ul,
 	ol,
 	li {
-		font-family: "Poppins", sans-serif;
-		color: ${Colors.text.dark};
+		font-family: inherit;
 	}
 
 	a,
@@ -88,6 +89,12 @@ export const GlobalStyles = css.global`
 		font-weight: normal;
 		margin: 20px 0;
 		margin-bottom: 50px;
+	}
+
+	.link {
+		text-decoration: underline;
+		color: ${Colors.muted[500]};
+		font-weight: normal;
 	}
 
 	.react-tabs {

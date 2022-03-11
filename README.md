@@ -1,3 +1,3 @@
-# Starter App
+# Portfolio
 
-### This is a base starting point for a next.js front end app.
+## Personal portfolio of Kyle Esterhuizen

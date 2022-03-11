@@ -3,14 +3,7 @@ module.exports = {
 		browser: true,
 		node: true,
 	},
-	extends: [
-		"next",
-		"airbnb",
-		"airbnb-typescript",
-		"plugin:import/recommended",
-		"plugin:import/typescript",
-		"prettier",
-	],
+	extends: ["next", "airbnb", "airbnb-typescript", "plugin:import/recommended", "plugin:import/typescript", "prettier"],
 	plugins: ["@typescript-eslint", "import"],
 	settings: {
 		next: {
@@ -38,6 +31,7 @@ module.exports = {
 		// next
 		"@next/next/no-html-link-for-pages": "off",
 		"react/jsx-props-no-spreading": "off",
+		"jsx-a11y/anchor-is-valid": "off",
 	},
 	overrides: [
 		{
